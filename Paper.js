@@ -1,4 +1,4 @@
-class paper{
+class boxpaper{
 
 	constructor(x,y,r){
 		var options={
@@ -16,14 +16,17 @@ class paper{
     }
     
 	display(){
+			
 			var paperpos=this.body.position;		
 
-			push();
+			push()
 			translate(paperpos.x, paperpos.y);
-			rectMode(CENTER);
+			rectMode(CENTER)
 			strokeWeight(3);
 			fill(255,0,255)
 			ellipse(0,0,this.r, this.r);
-			pop();	
+			pop()
+			
 	}
+
 }
